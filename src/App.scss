@@ -1,0 +1,30 @@
+// nav{
+//   &:hover{
+//     ul{
+//       max-height : 200px;
+//       height: 200px;
+//       display: block;
+//       transition: height ease-in 5s;
+
+//     }
+//   }
+// }
+ul{
+  // max-height:0;
+  // height: 0;
+  transition: height ease-in 5s;
+  display: block;
+}
+
+.menu{
+  transform: rotate(90deg);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,4 +1,6 @@
 import React from 'react'
+import style from "./image.module.scss";
+
 
 export default function Image({url,...otherProps}) {
     const handleError=({target}) =>{
@@ -9,6 +11,6 @@ export default function Image({url,...otherProps}) {
         alert(target.src)
     }
     return (
-        <img src={url} {...otherProps} onError={handleError} onClick={handleClick}/>
+        <img className={style.img} src={url} {...otherProps} onError={handleError} onClick={handleClick}/>
     )
 }
